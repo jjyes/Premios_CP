@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Festival los Confines</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+
+		<!--LINKS PERSONALIZADOS-->
+		<link rel="stylesheet" type="text/css" href="css/menu_principal.css">
+		<link rel="stylesheet" type="text/css" href="css/sede_gracias_resena.css">
+		<link rel="stylesheet" type="text/css" href="css/menu_sedes_resena.css">
+		<link rel="stylesheet" type="text/css" href="css/banner_sede_gracias.css">
+
+		<!--LOGO ICON-->
+		<link rel="shortcut icon" type="text/css" href="img/logo/LogoFestival.jpg">
+</head>
+	<body>	
+		<!--BOTON DE ARRIBA-->
+		<button onclick="arribaFunction()" id="btnarriba" title="Go to top"><ion-icon name="chevron-up-outline"></ion-icon></button>
+
+		<!--NAVBAR-->
+		<header>
+			<div class="container">
+				<nav>
+					<img src="img/logo/LogoFestival.jpg" class="logo">
+					<input type="checkbox" name="" class="check" id="toggle">
+					<label for="toggle" class="hamburger" id="hamburger">
+						<img src="img/svg/menu-outline.svg">
+					</label>
+					<ul class="nav-ul" id="nav-ul">
+						<li class="nav-link"><a href="index.html">inicio</a></li>
+						<li class="nav-link"><a href="QuienesSomos.html">quienes somos</a></li>
+						<li class="nav-link"><a href="NuestrasEdiciones.html">ediciones</a></li>
+						<li class="nav-link activo"><a href="SedesFestival.html">sedes</a></li>
+						<li class="nav-link"><a href="PremiosPoesiaConfines.html">premios los confines</a></li>
+						<li class="nav-link"><a href="BibliotecaVirtual.html">biblioteca virtual</a></li>
+						<li class="nav-link"><a href="PlaneaTuVisita_Gracias.html">planea tu visita</a></li>
+						<a href="contacto.html" class="btn_contacto">Contacto</a>
+					</ul>
+				</nav>	
+			</div>
+		</header>
+		<!--FIN NAVBAR-->
+
+		
+		<!--BANNER-->
+		<div class="hero-image">
+			<div class="container_banner">
+				<h1><span>SEDE GRACIAS</span></h1>
+				<span class="des">Festival Internacional de la Poesía los Confines</span>
+			</div>
+		</div>
+		<!--FIN BANNER-->
+		
+		<!--SUB-MENU-->
+		<div class="nav_dep">
+				<ul class="hover">
+					<li class="activo_dep"><a href="SedeGraciasResena.html">reseña</a></li>
+					<li><a href="SedeGraciasAtractivos.html">atractivo</a></li>
+					<li><a href="SedeGraciasInstituciones.html">instituciones que apoyan al festival los confines</a></li>
+					<li><a href="SedeGraciasVoluntarios.html">voluntario cultural</a></li>
+					<li><a href="SedeGraciasPatrocinadores.html">patrocinadores</a></li>
+					<li><a href="SedeGraciasVideo.html">video</a></li>
+					<li><a href="SedeGraciasGaleria.html">galeria</a></li>
+				</ul>
+		</div>
+		<!--FIN DEL SUB-MENU-->
+
+
+		<!--RESEÑA GRACIAS-->
+			<section>
+				<div class="container_resena next">
+					<main>
+						<div class="contenido_resena">
+							<h1>RESEÑA</h1>
+							<div class="border_g"></div>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+							<span id="dots">...</span><span id="mas">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+						</div>
+					</main>
+					<div class="container_flechas">
+						<button onclick="leer()" id="btn_leer">Leer mas</button>
+					</div>
+				</div>		
+			</section>
+			
+	
+
+
+		<!--FIN RESEÑA GRACIAS-->
+
+
+		<!--PIE DE PAGINA-->
+		<footer>
+			<div class="footer-container">
+				<div class="left-col">
+					<div class="social-media">
+						<a href="#" class="social"><ion-icon name="logo-facebook"></ion-icon></a>
+						<a href="#" class="social"><ion-icon name="logo-twitter"></ion-icon></a>
+						<a href="#" class="social"><ion-icon name="logo-instagram"></ion-icon></a>
+						<a href="#" class="social"><ion-icon name="logo-youtube"></ion-icon></a>
+					
+					</div>
+					<p class="rights-text">contacto@festivaldelosconfines www.festivaldelosconfines.com</p>
+					<p class="rights-text">Derechos Reservados Festival los Confines &copy;2020</p>
+				</div>
+				<div class="right-col">
+					<h1>Búsqueda</h1>
+					<div class="border"></div>
+					<br>
+						<form action="" class="newsletter" >
+							<input type="text" class="txtb" name="" placeholder="Búsqueda">
+							<input type="submit" name="" class="btn" value="BUSCAR">
+						</form>
+					</div>
+				</div>
+		</footer>
+		<!--FIN PIE DE PAGINA-->
+
+		
+		
+		<!--ICONOS-->
+		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+		<!--SCRIPTS PERSONALIZADOS-->
+		<script type="text/javascript" src="js/menu_principal_responsivo.js"></script>
+		<script type="text/javascript" src="js/next&previous.js"></script>
+		<script type="text/javascript" src="js/botontop.js"></script>
+		<script type="text/javascript" src="js/modaldepartamentos.js"></script>
+		<script type="text/javascript" src="js/boton_leer_mas.js"></script>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+.nav_dep{
+  margin:0px auto;
+  background: black;
+ 
+}
+.nav_dep ul{
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav_dep ul li{
+  padding: 7px 7px;
+}
+
+.nav_dep ul li a{
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  padding: 7px 7px;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+ .activo_dep a ,.nav_dep .hover li a:hover{
+      border:1px solid white;
+}
+
+
+
+@media only screen and (max-width: 1048px){
+  .nav_dep ul li a{
+    font-size: 14px;  
+      padding: 2.5px 1px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .nav_dep ul{
+    height: 300px;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+
+

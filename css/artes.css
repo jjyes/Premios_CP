@@ -1,0 +1,200 @@
+/*BANNER*/
+.hero-image{
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+	background: linear-gradient(135deg, rgba(49,24,131,0.6) 0%, rgba(72,56,149,0.6) 100%), url("../img/banner/19.jpg") center no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.container_banner{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+/*FIN BANNER*/
+
+a{
+	text-decoration: none;
+}
+
+/*GRID CARDS*/
+section{
+	padding: 25px 0;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.container_artes{
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+main{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	margin: 0px 15px 100px 15px;
+	
+}
+
+.container_artes .card_artes{
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+	height: 200px;
+	width: 200px;
+	background: linear-gradient(#55a6cb, #a378b5);
+	overflow: hidden;
+	position: relative;
+	transition: all ease 0.3s;
+	text-align: center;
+}
+
+.container_artes .card_artes:hover{
+	border-radius: 5px;
+	height: 600px;
+	width: 400px;
+}
+
+.container_artes .card_artes img{
+	border-radius: 50%;
+	margin: 20px auto;
+	display: block;
+	width: 160px;
+}
+
+.container_artes .card_artes h1{
+	position: relative;
+	color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.container_artes .card_artes p{
+	color: #fff;
+	font-size: 13px;
+	margin:0;
+	line-height: 28px;
+	padding: 5px 15px 7px 15px;
+	text-align: justify;
+	height: 90px;
+	overflow: hidden;
+}
+
+.container_artes a{
+	display: inline-block;
+	color: #fff;
+	background-color: #2196f3;
+	text-decoration: none;
+	padding: 7px 7px;
+	border-radius: 5px;
+	margin-top: 6px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.container_artes a:hover{
+	box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.container_artes .showContent p{
+	height: auto;
+}
+
+.container_artes .showContent a.readmore-btn{
+	background-color: black;
+}
+
+@media(max-width: 768px){
+	main{
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+	}
+}
+
+@media(max-width: 568px){
+	main{
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 20px;
+	}
+}
+
+
+/*FIN GRID CARDS*/
+
+
+/**/
+
+.wrapper_artes{
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+   	margin:70px auto;   
+   
+}
+
+.wrapper_artes .tabs_wrap_artes{
+    display: flex;
+    list-style: none;
+    margin:0 auto;
+}
+
+
+.wrapper_artes .tabs_wrap_artes ul li{
+    display: inline-block;
+    padding: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 0.9rem;
+    border-radius: 5px;
+   
+}
+
+ .wrapper_artes .tabs_wrap_artes ul li:hover,
+ .wrapper_artes .tabs_wrap_artes ul li.activo_artes{
+	background: skyblue;
+	color: white;
+}
+
+.wrapper_artes .title_artes{
+	margin: 6px auto;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+}
+
+
+@media(max-width: 1024px){
+
+	.wrapper_artes{
+		flex-direction: column;
+	    text-align: center;
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+

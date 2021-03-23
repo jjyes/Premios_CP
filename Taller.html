@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Festival los Confines</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--LINKS PERSONALIZADOS-->
+		<link rel="stylesheet" type="text/css" href="css/menu_principal.css">
+		<link rel="stylesheet" type="text/css" href="css/talleres.css">
+		<link rel="stylesheet" type="text/css" href="css/menu_departamentos.css">
+
+		<!--LOGO ICON-->
+		<link rel="shortcut icon" type="text/css" href="img/logo/LogoFestival.jpg">
+</head>
+	<body>	
+
+		<!--BOTON DE ARRIBA-->
+		<button onclick="arribaFunction()" id="btnarriba" title="Go to top"><ion-icon name="chevron-up-outline"></ion-icon></button>
+
+		<!--NAVBAR-->
+		<header>
+			<div class="container">
+				<nav>
+					<img src="img/logo/LogoFestival.jpg" class="logo">
+					<input type="checkbox" name="" class="check" id="toggle">
+					<label for="toggle" class="hamburger" id="hamburger">
+						<img src="img/svg/menu-outline.svg">
+					</label>
+					<ul class="nav-ul" id="nav-ul">
+						<li class="nav-link"><a href="index.html">inicio</a></li>
+						<li class="nav-link"><a href="QuienesSomos.html">quienes somos</a></li>
+						<li class="nav-link activo"><a href="EdicionesFestivalMenu.html">ediciones</a></li>
+						<li class="nav-link"><a href="SedesFestival.html">sedes</a></li>
+						<li class="nav-link"><a href="PremiosPoesiaConfines.html">premios los confines</a></li>
+						<li class="nav-link"><a href="BibliotecaVirtual.html">biblioteca virtual</a></li>
+						<li class="nav-link"><a href="PlaneaTuVisita_Gracias.html">planea tu visita</a></li>
+						<a href="contacto.html" class="btn_contacto">Contacto</a>
+					</ul>
+				
+				</nav>	
+			</div>
+		</header>
+		<!--FIN NAVBAR-->
+
+
+		<div class="banner_animado">
+			<div class="container_animado">
+
+			</div>
+			
+		</div>
+
+
+
+		<!--MENU DEPARTAMENTOS-->
+		<div class="nav_dep">
+				<ul class="hover">
+					<li class="activo_dep"><a href="#">Gracias</a></li>
+					<li><a href="#">Ruinas de Copan</a></li>
+					<li><a href="#">Santa Rosa</a></li>
+					<li><a href="#">Siguatepeque</a></li>
+					<li><a href="#">San Pedro Sula</a></li>
+					<li><a href="#">Tegucigalpa</a></li>
+				</ul>
+		</div>
+		<!--FIN DEL MENU DEPARTAMENTOS-->
+	
+		
+		<!--CARDS TALLER-->
+		<section>
+			<h1>Talleres 2019</h1>
+			<div class="container_sedes next">
+				<main>
+					<!--#1-->
+					<div>
+						<div class="tab">
+						  <button class="btn_taller"><b>24 Julio</b></button>
+						  <button class="tablinks" onclick="tabtaller(event, 'Resena1')" id="Seleccionado">Reseña</button>
+						  <button class="tablinks" onclick="tabtaller(event, 'Horario1')">Horario</button>
+						  <button class="tablinks" onclick="tabtaller(event, 'Requisitos1')">Requisitos</button>
+						  <button class="tablinks" onclick="tabtaller(event, 'Impartido1')">Impartido</button>
+						</div>
+
+						<div id="Resena1" class="tabcontent">
+						  <h2>Titulo</h2>
+						  <h3>Genero</h3>
+						  <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+						</div>
+
+						<div id="Horario1" class="tabcontent">
+						  <ul class="lista">
+							  <li><i class="fa fa-calendar"></i>9:00 AM</li>
+							  <li><i class="fa fa-calendar"></i>11:00 AM</li>
+							  <li><i class="fa fa-calendar"></i>12:00 PM</li>
+							</ul>
+						</div>
+
+						<div id="Requisitos1" class="tabcontent">
+						 	<ul class="lista">
+							  <li><i class="fa fa-pencil-square-o"></i>Requisito #1</li>
+							  <li><i class="fa fa-pencil-square-o"></i>Requisito #1</li>
+							  <li><i class="fa fa-pencil-square-o"></i>Requisito #1</li>
+							</ul>
+						</div>
+
+						<div id="Impartido1" class="tabcontent">
+						  <ul class="lista">
+							  <li><i class="fa fa-user"></i>Nombre</li>
+							   <li><i class="fa fa-user"></i>Nombre</li>
+							  <li><i class="fa fa-user"></i>Nombre</li>
+							</ul>
+						</div>
+					</div>
+			
+					<!--#2-->
+					<div>
+						<div class="tab">
+						  <button class="btn_taller"><b>25 Julio</b></button>
+						  <button class="tablinks2" onclick="tabtaller2(event, 'Resena2')" id="Seleccionado2">Reseña</button>
+						  <button class="tablinks2" onclick="tabtaller2(event, 'Horario2')">Horario</button>
+						  <button class="tablinks2" onclick="tabtaller2(event, 'Requisitos2')">Requisitos</button>
+						  <button class="tablinks2" onclick="tabtaller2(event, 'Impartido2')">Impartido</button>
+						</div>
+
+						<div id="Resena2" class="tabcontent2">
+						  <h2>Titulo</h2>
+						  <h3>Genero</h3>
+						  <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+						</div>
+
+						<div id="Horario2" class="tabcontent2">
+						  <ul class="lista">
+							  <li><i class="fa fa-calendar"></i>9:00 AM</li>
+							  <li><i class="fa fa-calendar"></i>11:00 AM</li>
+							  <li><i class="fa fa-calendar"></i>12:00 PM</li>
+							</ul>
+						</div>
+
+						<div id="Requisitos2" class="tabcontent2">
+							<ul class="lista">
+							  <li><i class="fa fa-pencil-square-o"></i>Requisito #1</li>
+							  <li><i class="fa fa-pencil-square-o"></i>Requisito #1</li>
+							  <li><i class="fa fa-pencil-square-o"></i>Requisito #1</li>
+							</ul>
+						</div>
+
+						<div id="Impartido2" class="tabcontent2">
+						  <ul class="lista">
+							  <li><i class="fa fa-user"></i>Nombre</li>
+							   <li><i class="fa fa-user"></i>Nombre</li>
+							  <li><i class="fa fa-user"></i>Nombre</li>
+							</ul>
+						</div>
+					</div>
+				</main>
+			</div>
+
+
+			<div class="container_sedes next">
+				<main>
+					<!--#3-->
+					<div>
+						<div class="tab">
+						  <button class="btn_taller"><b>26 Julio</b></button>
+						  <button class="tablinks3" onclick="tabtaller3(event, 'Resena3')" id="Seleccionado3">Reseña</button>
+						  <button class="tablinks3" onclick="tabtaller3(event, 'Horario3')">Horario</button>
+						  <button class="tablinks3" onclick="tabtaller3(event, 'Requisitos3')">Requisitos</button>
+						  <button class="tablinks3" onclick="tabtaller3(event, 'Impartido3')">Impartido</button>
+						</div>
+
+						<div id="Resena3" class="tabcontent3">
+						  <h2>Titulo</h2>
+						  <h3>Genero</h3>
+						  <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+						</div>
+
+						<div id="Horario3" class="tabcontent3">
+						  <ul class="lista">
+							  <li><i class="fa fa-calendar"></i>9:00 AM</li>
+							  <li><i class="fa fa-calendar"></i>11:00 AM</li>
+							  <li><i class="fa fa-calendar"></i>12:00 PM</li>
+							</ul>
+						</div>
+
+						<div id="Requisitos3" class="tabcontent3">
+						  <ul class="lista">
+							  <li><i class="fa fa-pencil-square-o"></i>Requisito #1</li>
+							  <li><i class="fa fa-pencil-square-o"></i>Requisito #1</li>
+							  <li><i class="fa fa-pencil-square-o"></i>Requisito #1</li>
+							</ul>
+						</div>
+
+						<div id="Impartido3" class="tabcontent3">
+						  <ul class="lista">
+							  <li><i class="fa fa-user"></i>Nombre</li>
+							   <li><i class="fa fa-user"></i>Nombre</li>
+							  <li><i class="fa fa-user"></i>Nombre</li>
+							</ul>
+						</div>
+					</div>
+
+
+					<!--#4-->
+					<div>
+						<div class="tab">
+						  <button class="btn_taller"><b>27 Julio</b></button>
+						  <button class="tablinks4" onclick="tabtaller4(event, 'Resena4')" id="Seleccionado4">Reseña</button>
+						  <button class="tablinks4" onclick="tabtaller4(event, 'Horario4')">Horario</button>
+						  <button class="tablinks4" onclick="tabtaller4(event, 'Requisitos4')">Requisitos</button>
+						  <button class="tablinks4" onclick="tabtaller4(event, 'Impartido4')">Impartido</button>
+						</div>
+
+						<div id="Resena4" class="tabcontent4">
+						  <h2>Titulo</h2>
+						  <h3>Genero</h3>
+						  <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+						</div>
+
+						<div id="Horario4" class="tabcontent4">
+						  <ul class="lista">
+							  <li><i class="fa fa-calendar"></i>9:00 AM</li>
+							  <li><i class="fa fa-calendar"></i>11:00 AM</li>
+							  <li><i class="fa fa-calendar"></i>12:00 PM</li>
+							</ul>
+						</div>
+
+						<div id="Requisitos4" class="tabcontent4">
+						  <ul class="lista">
+							  <li><i class="fa fa-pencil-square-o"></i>Requisito #1</li>
+							  <li><i class="fa fa-pencil-square-o"></i>Requisito #1</li>
+							  <li><i class="fa fa-pencil-square-o"></i>Requisito #1</li>
+							</ul>
+						</div>
+
+						<div id="Impartido4" class="tabcontent4">
+						  <ul class="lista">
+							  <li><i class="fa fa-user"></i>Nombre</li>
+							   <li><i class="fa fa-user"></i>Nombre</li>
+							  <li><i class="fa fa-user"></i>Nombre</li>
+							</ul>
+						</div>
+					</div>
+				</main>
+			</div>
+		</section>
+
+		<div class="container_flechas" >
+				<button class="pbutton" onclick="nextDivs(-1)">❮</button>
+				<button class="pbutton" onclick="nextDivs(1)">❯</button>
+		</div>
+		<!--FIN CARDS TALLER-->
+
+		<!--PIE DE PAGINA-->
+		<footer>
+			<div class="footer-container">
+				<div class="left-col">
+					<div class="social-media">
+						<a href="#" class="social"><ion-icon name="logo-facebook"></ion-icon></a>
+						<a href="#" class="social"><ion-icon name="logo-twitter"></ion-icon></a>
+						<a href="#" class="social"><ion-icon name="logo-instagram"></ion-icon></a>
+						<a href="#" class="social"><ion-icon name="logo-youtube"></ion-icon></a>
+					</div>
+					<p class="rights-text">contacto@festivaldelosconfines www.festivaldelosconfines.com</p>
+					<p class="rights-text">Derechos Reservados Festival los Confines &copy;2020</p>
+				</div>
+				<div class="right-col">
+					<h1>Búsqueda</h1>
+					<div class="border"></div>
+					<br>
+						<form action="" class="newsletter" >
+							<input type="text" class="txtb" name="" placeholder="Búsqueda">
+							<input type="submit" name="" class="btn" value="BUSCAR">
+						</form>
+					</div>
+				</div>
+		</footer>
+		<!--FIN PIE DE PAGINA-->
+		
+		<!--ICONOS-->
+		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+		<!--SCRIPTS PERSONALIZADOS-->
+		<script type="text/javascript" src="js/menu_principal_responsivo.js"></script>
+		<script type="text/javascript" src="js/botontop.js"></script>
+		<script type="text/javascript" src="js/taller.js"></script>
+		<script type="text/javascript" src="js/next&previous.js"></script>
+	
+	</body>
+</html>

@@ -1,0 +1,157 @@
+
+/*GRID TALLERES*/
+section{
+	padding: 20px 0;
+	margin-top: 0px;
+	text-align: center;
+}
+
+
+main{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+}
+
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.box-container{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.gallery .box-container{
+	padding: .5rem 0;
+}
+
+.gallery .box-container .box{
+	width: 100%;
+	margin:1rem auto;
+	border-radius: .5rem;
+	box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	background: #fff;
+}
+
+.gallery .box-container .box .image{
+	height: 25rem;
+	width: 80%;
+}
+
+.gallery .box-container .box .image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.gallery .box-container .box .content{
+	height: 100%;
+	width: 100%;
+	padding: 2rem;
+	text-align: left;
+}
+
+/*.gallery .box-container .box:nth-child(even){
+	flex-flow: row-reverse;
+}
+
+.gallery .box-container .box:nth-child(even) .content{
+	text-align: right;
+}*/
+
+.heading{
+	background-color: #fff;
+	color:black;
+	margin-bottom: 10px;
+	padding: 30px 0;
+	grid-column: 1/-1;
+	text-align: center;
+}
+
+.heading>h1{
+	font-weight: 600;
+	font-size: 30px;
+	letter-spacing: 10px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+
+.gallery .box-container .box .content h3{
+	color: black;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.gallery .box-container .box .content p{
+	color: #666;
+	font-size: 0.85rem;
+	padding: 1rem 0;
+	letter-spacing: 1.5px;
+	text-align: justify;
+}
+
+
+.btn_hotel{
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.3rem 0.5rem;
+	background: black;
+	border-radius: 0.3rem;
+}
+
+.box .showContent p{
+	height: auto;
+}
+
+.box .showContent a.readmore-btn{
+	background-color: black;
+}
+
+@media(max-width: 992px){
+	main{
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 20px;
+	}
+}
+
+@media (max-width: 970px){
+	.gallery .box-container .box{
+		flex-flow: column;
+		width: 90%;
+	}
+
+	.gallery .box-container .box:nth-child(even){
+		flex-flow: column;
+	}
+
+	.gallery .box-container .box .image{
+		width: 100%;
+	}
+
+	.gallery .box-container .box .content{
+		width: 100%;
+	}
+
+	.gallery .box-container .box:nth-child(even) .content{
+		text-align: left;
+	}
+
+}
+
+@media (max-width: 320px){
+	.heading>h1{
+		font-size: 20px;
+	}
+}

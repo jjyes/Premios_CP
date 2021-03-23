@@ -1,0 +1,140 @@
+
+.espacio{
+ height:  15vh;
+}
+.container_ins{
+	position: relative;
+	width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+	margin: 100px auto;
+
+}
+
+.container_ins .card{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background: #94618e;
+}
+
+.container_ins .card:nth-child(even){
+	flex-direction: column-reverse;
+}
+
+.container_ins .card .imgbx{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #000;
+	overflow: hidden;
+}
+
+.container_ins .card .imgbx img{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 1s;
+}
+
+.imgbx:hover img{
+	transform: scale(1.1);
+}
+
+.container_ins .card .content{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	align-items: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1.3;
+}
+
+.container_ins .card .content div{
+	padding: 20px;
+	text-align: center;
+}
+
+.content h2{
+	font-size: 15px;
+}
+
+
+@media (max-width: 1024px){
+	.container_ins{
+		margin:50px auto;
+		box-shadow: none;
+	}
+	.espacio{
+    height: 0vh;
+  }
+}
+
+
+@media (max-width: 1000px){
+	.container_ins{
+		width: 450px;
+		grid-template-columns: repeat(auto-fit, minmax(100%,1fr));
+		margin:30px auto;
+		box-shadow: none;
+	}
+
+	.container_ins .card{
+		flex-direction: row;
+		margin:10px 0;
+	}
+
+	.container_ins .card:nth-child(even){
+		flex-direction: row-reverse;
+	}
+
+	.container_ins .card .imgbx,
+	.container_ins .card .content{
+		width: 50%;
+	}	
+}
+
+
+@media (max-width: 600px){
+
+	.container_ins{
+		width: 200px;
+		grid-template-columns: repeat(auto-fit, minmax(100%,1fr));
+		margin:25px auto;
+		box-shadow: none;
+	}
+
+	.container_ins .card{
+		flex-direction: column;
+		margin: 20px 0;
+	}
+
+	.container_ins .card:nth-child(even)
+	{
+		flex-direction: column;
+	}
+
+	.container_ins .card .imgbx,
+	.container_ins .card .content{
+		width: 100%;
+	}
+
+	.container_ins .card .content{
+		height: 150px;
+	}
+
+	.content h2{
+		font-size: 13px;
+	}
+
+	.content p{
+		font-size: 14px;
+	}
+}

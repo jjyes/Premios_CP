@@ -1,0 +1,104 @@
+.container_voluntarios{
+	margin: 50px  auto;
+	color: white;
+}
+
+
+.heading{
+	color: black;
+	text-align: center;
+}
+.border_g{
+	width: 180px;
+	height: 4px;
+	background: #333;
+	margin: 30px auto;
+}
+.profiles{
+	display: flex;
+	justify-content: space-around;
+	margin: 35px 80px;
+}
+
+.profile{
+	flex-basis: 200px;
+}
+
+.profile .profile-img{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	filter: grayscale(100%);
+	cursor: pointer;
+	transition: 400ms;
+}
+
+.profile:hover .profile-img{
+	filter: grayscale(0);
+}
+
+.user-name{
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: 3px;
+	color: black;
+	text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 1150px){
+	.profiles{
+		flex-direction: column;
+	}
+
+	.profile{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.user-name{
+		text-align: center;
+		margin: 20px 60px 40px 60px;
+		font-size: 20px;
+	}
+}
+
+
+@media only screen and (max-width: 900px){
+	.heading{
+		font-size: 30px;
+		color: black;
+		text-align: center;
+	}
+
+	.profiles{
+		margin: 20px 0;
+	}
+
+}
+
+
+@media only screen and (max-width: 320px){
+	.heading{
+		font-size: 25px;
+		color: black;
+		text-align: center;
+	}
+
+	
+
+	.user-name{
+		font-size: 15px;
+	}
+
+	.profile .profile-img{
+		height: 150px;
+		width: 150px;
+	}
+
+
+}

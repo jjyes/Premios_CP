@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Festival los Confines</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--LINKS PERSONALIZADOS-->
+		<link rel="stylesheet" type="text/css" href="css/menu_principal.css">
+		<link rel="stylesheet" type="text/css" href="css/sede_gracias_video.css">
+		<link rel="stylesheet" type="text/css" href="css/menu_sedes_resena.css">
+		<link rel="stylesheet" type="text/css" href="css/banner_sede_gracias.css">
+
+		<!--LOGO ICON-->
+		<link rel="shortcut icon" type="text/css" href="img/logo/LogoFestival.jpg">
+</head>
+	<body>	
+		<!--BOTON DE ARRIBA-->
+		<button onclick="arribaFunction()" id="btnarriba" title="Go to top"><ion-icon name="chevron-up-outline"></ion-icon></button>
+
+		<!--NAVBAR-->
+		<header>
+			<div class="container">
+				<nav>
+					<img src="img/logo/LogoFestival.jpg" class="logo">
+					<input type="checkbox" name="" class="check" id="toggle">
+					<label for="toggle" class="hamburger" id="hamburger">
+						<img src="img/svg/menu-outline.svg">
+					</label>
+					<ul class="nav-ul" id="nav-ul">
+						<li class="nav-link"><a href="index.html">inicio</a></li>
+						<li class="nav-link"><a href="QuienesSomos.html">quienes somos</a></li>
+						<li class="nav-link"><a href="NuestrasEdiciones.html">ediciones</a></li>
+						<li class="nav-link activo"><a href="SedesFestival.html">sedes</a></li>
+						<li class="nav-link"><a href="PremiosPoesiaConfines.html">premios los confines</a></li>
+						<li class="nav-link"><a href="BibliotecaVirtual.html">biblioteca virtual</a></li>
+						<li class="nav-link"><a href="PlaneaTuVisita_Gracias.html">planea tu visita</a></li>
+						<a href="contacto.html" class="btn_contacto">Contacto</a>
+					</ul>
+	
+				</nav>	
+			</div>
+		</header>
+		<!--FIN NAVBAR-->
+		<!--BANNER-->
+		<div class="hero-image">
+			<div class="container_banner">
+				<h1><span>SEDE GRACIAS</span></h1>
+				<span class="des">Festival Internacional de la Poesía los Confines</span>
+			</div>
+		</div>
+		<!--FIN BANNER-->
+
+		<!--SUB-MENU-->
+		<div class="nav_dep">
+				<ul class="hover">
+					<li><a href="SedeGraciasResena.html">reseña</a></li>
+					<li><a href="SedeGraciasAtractivos.html">atractivo</a></li>
+					<li><a href="SedeGraciasInstituciones.html">instituciones que apoyan al festival los confines</a></li>
+					<li><a href="SedeGraciasVoluntarios.html">voluntario cultural</a></li>
+					<li><a href="SedeGraciasPatrocinadores.html">patrocinadores</a></li>
+					<li class="activo_dep"><a href="SedeGraciasVideo.html">video</a></li>
+					<li><a href="SedeGraciasGaleria.html">galeria</a></li>
+				</ul>
+		</div>
+		<!--FIN DEL SUB-MENU-->
+
+		
+
+		<!--VIDEO-->
+		<section>
+			<div class="container_video">
+				<main>
+				<div class="box_video">
+						<video autoplay muted loop id="video_play">
+							<source src="video/festival.mp4" type="video/mp4">
+						</video>
+						<div class="content_video">
+						  <h1>TÍTULO</h1>
+						  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. .</p>
+						    <button id="btn_video" onclick="myFunction()">Pause</button>
+						</div>
+					</div>
+				</main>
+			</div>
+		</section>
+		<!--FIN VIDEO-->
+
+
+		<!--PIE DE PAGINA-->
+		<footer>
+			<div class="footer-container">
+				<div class="left-col">
+					<div class="social-media">
+						<a href="#" class="social"><ion-icon name="logo-facebook"></ion-icon></a>
+						<a href="#" class="social"><ion-icon name="logo-twitter"></ion-icon></a>
+						<a href="#" class="social"><ion-icon name="logo-instagram"></ion-icon></a>
+						<a href="#" class="social"><ion-icon name="logo-youtube"></ion-icon></a>
+					
+					</div>
+					<p class="rights-text">contacto@festivaldelosconfines www.festivaldelosconfines.com</p>
+					<p class="rights-text">Derechos Reservados Festival los Confines &copy;2020</p>
+				</div>
+				<div class="right-col">
+					<h1>Búsqueda</h1>
+					<div class="border"></div>
+					<br>
+						<form action="" class="newsletter" >
+							<input type="text" class="txtb" name="" placeholder="Búsqueda">
+							<input type="submit" name="" class="btn" value="BUSCAR">
+						</form>
+					</div>
+				</div>
+		</footer>
+		<!--FIN PIE DE PAGINA-->
+		
+		<!--ICONOS-->
+		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+		<!--SCRIPTS PERSONALIZADOS-->
+		<script type="text/javascript" src="js/menu_principal_responsivo.js"></script>
+		<script type="text/javascript" src="js/botontop.js"></script>
+		<script type="text/javascript" src="js/video.js"></script>
+
+	</body>
+</html>

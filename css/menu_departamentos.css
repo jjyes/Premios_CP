@@ -1,0 +1,52 @@
+.nav_dep{
+  margin:0px auto;
+  background: black;
+ 
+}
+
+.nav_dep ul{
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav_dep ul li{
+  padding: 10px 10px;
+}
+
+.nav_dep ul li a{
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+  padding: 8px 8px;  
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+
+}
+
+ .activo_dep a, .nav_dep .hover a:hover{
+     border:1px solid white;
+}
+
+
+@media only screen and (max-width: 1280px){
+  .nav_dep ul{
+    padding: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px){
+  .nav_dep ul{
+    height: 230px;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+
+
+
